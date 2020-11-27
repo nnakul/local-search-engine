@@ -613,6 +613,7 @@ void SEARCH_QUERY ( HASHMAP* H , PTRIE T , STRIE ST , SEARCH_RESULT* R , int* CO
 	while ( true )
 	{
 		if ( K>=0 && query[K] == '\0' )	break ;
+		if ( K >= MAXLEN*900-1 ) break ;
 		sscanf ( query+K+1 , " %s" , word ) ;
 		if ( ! strcmp( word , "#QUIT" ) )
 		{
