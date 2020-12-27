@@ -730,7 +730,7 @@ void INSERT_INTO_HASHMAP ( char* word , HASHMAP* H , int ID , int POS )
 
 void READ_FILE ( int ID , HASHMAP* H , PTRIE* T , STRIE* ST , char SW[][MAXLEN] )
 {
-	char file[] = "input_" ;
+	char file[] = "INPUT_FILES/input_" ;
 	char suff[3] ;
 	sprintf( suff , "%d" , ID ) ;
 	strcat( file , suff ) ;
